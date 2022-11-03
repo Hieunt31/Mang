@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [
+            [1, 2, 3, 4,],
+            [5, 2, 1, 44, 23, 7],
+            [6, 9, 12, 34, 12, 6, 2, 90, 12]
+        ]
+        count = 0;
+        tong = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] % 3 == 0) {
+                    tong += arr[i][j]; count++
+                }
+            }
+        }
+        document.write('TBC các phần tử chia hết cho 3 là ' + tong / count);
+        document.write('<br>')
+    </script>
+
+</body>
+
+</html>
